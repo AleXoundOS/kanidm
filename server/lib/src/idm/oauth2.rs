@@ -2130,7 +2130,7 @@ impl<'a> IdmServerProxyReadTransaction<'a> {
                 Some(account.spn.clone())
             };
 
-            let token_type = Some("access_token".to_string());
+            let token_type = Some("bearer".to_string());
             Ok(AccessTokenIntrospectResponse {
                 active: true,
                 scope,
